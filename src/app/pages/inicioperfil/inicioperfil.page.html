@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center" >Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p class="ion-text-center"> 
+    <ion-card>
+      <img alt="Silhouette of mountains" src="assets/imagenes/avatarblanco.jpg" />
+      <ion-card-header>
+        <ion-card-title class="ion-text-center" >Bienvenido</ion-card-title>
+        <br>
+        <ion-card-subtitle> {{credenciales.correo}}</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        <strong> Carrera: </strong> Analista Programador c.
+      </ion-card-content>
+  
+      
+    </ion-card>
+  
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button>
+        <ion-icon name="person"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="top">
+        <ion-fab-button [routerLink]="['/userslist']"><ion-icon name="checkmark-done-outline"></ion-icon></ion-fab-button> <!--Boton de userlist-->
+        <ion-fab-button [routerLink]="['/cursos']"><ion-icon name="accessibility-outline"></ion-icon></ion-fab-button> <!--Boton de userlist-->
+        <ion-fab-button [routerLink]="['/map']"><ion-icon name="locate-outline"></ion-icon></ion-fab-button> <!--Boton de map-->
+        <ion-fab-button [routerLink]="['/qr']"><ion-icon name="finger-print-outline"></ion-icon></ion-fab-button> <!--Boton de qr-->
+        <ion-fab-button [routerLink]="['/listado']"><ion-icon name="albums-outline"></ion-icon></ion-fab-button> <!--Boton de asistencia-->
+        <ion-fab-button (click)="logout()" ><ion-icon name="power"></ion-icon></ion-fab-button> <!--Boton de logout-->
+      </ion-fab-list>
+    </ion-fab>
+</ion-content>

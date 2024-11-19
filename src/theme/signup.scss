@@ -1,0 +1,130 @@
+.sign-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .header{
+        flex: 1;
+        .tittle{
+            padding-top: 70px;
+            img{
+                padding-left: 15px;
+                width: 200px;
+            }
+        }
+    }
+    .login-container{
+        flex: 2;
+
+    }
+
+    .form{
+        --background: none;
+        background:none;
+        max-width: 230px;
+        margin: 0 auto;
+
+        ion-item{
+            --background: #63869b;
+            --border-radius: 10px;
+            --border-color: #FFFF00;
+            --highlight-height:0;
+            color: #FAFAFA;
+            margin-bottom: 15px;
+
+            ion-icon{
+                color: #FAFAFA;
+            }
+    
+        }
+
+        
+    }
+
+    .sign-up-container{
+        position: absolute;
+        bottom: 0;
+        height: 70px;
+        width: 100%;
+        padding-top: 22px;
+        transition: all 1s;
+        border-radius: 85% 85% 0 0 / 30% ;
+        overflow: hidden;
+
+        &.active{
+            height: calc(100% - 140px);
+        }
+
+
+
+
+        .texto-movible{
+            color: #FAFAFA;
+            font-size: 17px;
+            margin-bottom: 27px;
+        }
+
+        .form{
+            ion-item{
+                --background: #63869b;
+            }
+        }
+
+    }
+}
+
+.gradient-1 {
+    --background: linear-gradient(180deg, rgba(132,163,183,1) 0%, rgba(97,135,157,1) 100%);
+    background: linear-gradient(180deg, rgba(132,163,183,1) 0%, rgba(97,135,157,1) 100%);
+}
+.gradient-2 {
+    --background: linear-gradient(180deg, rgba(35,224,200,1) 0%, rgba(73,180,181,1) 100%);
+    background: linear-gradient(180deg, rgba(35,224,200,1) 0%, rgba(73,180,181,1) 100%);
+}
+
+.boton-verde {
+    --background: rgba(35,224,200,1);
+    color: #FFF;
+    width: 140px;
+    margin-top: 10px;
+}
+.boton-gris {
+    --background: rgba(97,135,157,1);
+    color: #FFF;
+    width: 140px;
+    margin-top: 10px;
+}
+.boton-recu {
+    --background: rgb(159, 206, 20);
+    color: #FFF;
+    height:32px;
+    width: 210px;
+    margin-top: 15px;
+}
+
+.fade-in {
+    animation: fadein 2s;
+}
+
+.fade-out{
+    animation: fadeout 1s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

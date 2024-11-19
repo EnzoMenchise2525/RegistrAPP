@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="guard"></ion-back-button>
+      <ion-title>lector QR</ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <ion-button (click)="scan()">Escanear QR</ion-button>
+  {{code}}
+
+</ion-content>

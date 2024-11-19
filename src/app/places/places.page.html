@@ -1,0 +1,35 @@
+
+<ion-content>
+
+  <div class="sign-container gradient-1 ">
+    
+    <div class="header">
+      <div class="tittle ion-text-center">
+        <img src="assets/icon/logoDuoc.png" height="60">
+      </div>
+    </div>
+    
+    <div class="login-container ">
+      
+      <ion-list lines="nones" class="form fade-in" >
+          <ion-item>
+            <ion-label position = "floating"> Correo DuocUC</ion-label>
+            <ion-input [(ngModel)]="credenciales.correo" placeholder="correo"></ion-input>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label position = "floating"> Contraseña </ion-label>
+            <ion-input [(ngModel)]="credenciales.password" placeholder="Contraseña"></ion-input>
+          </ion-item>
+          
+
+        <br>
+        <ion-button  class="ion-text-center" (click)="login()"> Ingresar </ion-button>
+      </ion-list>
+
+    </div>
+
+  </div>
+    
+</ion-content>
+

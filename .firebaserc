@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "proyectoregistrappbd": {
+      "hosting": {
+        "app": [
+          "proyectoregistrappbd"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "proyectoregistrappbd"
+  }
+}
